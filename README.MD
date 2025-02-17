@@ -19,14 +19,28 @@ Active Project: booksreviewpr
 
 Emuladores Firebase utilizados
 
+┌────────────────┬───────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port         │ View in Emulator UI              │
+├────────────────┼───────────────────┼──────────────────────────────────┤
+│ Authentication │ 192.168.1.13:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼───────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001    │ http://127.0.0.1:4000/functions  │
+├────────────────┼───────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080    │ http://127.0.0.1:4000/firestore  │
+├────────────────┼───────────────────┼──────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5005    │ n/a                              │
+├────────────────┼───────────────────┼──────────────────────────────────┤
+│ Storage        │ 192.168.1.13:9199 │ http://127.0.0.1:4000/storage    │
+├────────────────┼───────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001    │ http://127.0.0.1:4000/extensions │
+└────────────────┴───────────────────┴──────────────────────────────────┘
 
-
-
+Tanto el emulador de autenticacion como el de Storage correspondes a IP's locales.
 
 ## 📁 Estructura del Proyecto
 
 ```
-book-review-app/
+booksreview/
 ├── src/
 │   ├── screens/
 │   │   ├── auth/
@@ -36,98 +50,22 @@ book-review-app/
 │   │       ├── LibraryScreen.js
 │   │       ├── MyBooksScreen.js
 │   │       └── ProfileScreen.js
+│   │       └── ProfileStackNavigator.js
 │   ├── components/
 │   ├── navigation/
+│   │       ├── AppNavigator.js
+│   │       ├── AuthNavigator.js
+│   │       └── TabNavigator.js
 │   ├── services/
+│   │       └── BooksAPI.js
 │   └── utils/
 ├── App.js
 └── package.json
+└── firebase.json
+└── firebaseConfig.js
 ```
 
-## 🎯 Tareas Pendientes
-
-Para completar el proyecto, deberás implementar:
-
-1. **Autenticación**
-   - Configurar Firebase
-   - Implementar login con email/password
-   - Gestionar estados de autenticación
-   - Añadir validaciones de formularios
-
-2. **Gestión de Libros**
-   - Integrar la API de Udacity Books
-   - Implementar búsqueda y filtrado
-   - Crear vista detallada de libros
-
-3. **Sistema de Reseñas**
-   - Crear el CRUD de reseñas
-   - Implementar calificación por estrellas
-   - Gestionar reseñas en Firebase
-
-4. **Perfil de Usuario**
-   - Añadir foto de perfil
-   - Implementar estadísticas de lectura
-   - Gestionar información personal
-
-## 💡 Recomendaciones
-
-1. **Gestión de Estado**
-   - Considera usar Context API para estado global
-   - Implementa reducers para operaciones complejas
-   - Mantén el estado local cuando sea apropiado
-
-2. **Código Limpio**
-   - Sigue una estructura de carpetas coherente
-   - Usa nombres descriptivos para componentes y funciones
-   - Implementa PropTypes para validación de props
-   - Comenta el código cuando sea necesario
-
-3. **UI/UX**
-   - Mantén un diseño consistente
-   - Implementa estados de carga
-   - Añade mensajes de error claros
-   - Usa animaciones con moderación
-
-4. **Performance**
-   - Implementa memorización cuando sea necesario
-   - Optimiza las imágenes
-   - Usa lazy loading para componentes pesados
-   - Implementa paginación en listas largas
-
-## 🔍 Debugging
-
-- Usa console.log() estratégicamente
-- Implementa try-catch para manejo de errores
-- Utiliza React Native Debugger para inspección
-- Monitorea el rendimiento con las Dev Tools de React
-
-## 📝 Recursos Útiles
-
-- [Documentación de React Native](https://reactnative.dev/docs/getting-started)
-- [Documentación de Expo](https://docs.expo.dev/)
-- [Guía de Firebase](https://firebase.google.com/docs)
-- [React Navigation Docs](https://reactnavigation.org/)
-- [RNE UI Components](https://reactnativeelements.com/)
-
-## ⚠️ Consideraciones Importantes
-
-1. **Seguridad**
-   - No expongas claves de API en el código
-   - Implementa validaciones en el cliente y servidor
-   - Usa variables de entorno para configuraciones sensibles
-
-2. **Testing**
-   - Prueba en iOS y Android
-   - Verifica diferentes tamaños de pantalla
-   - Prueba casos de error y edge cases
-   - Implementa manejo de estado offline
-
-## 📖 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE.md para detalles
-
-## 🎉 Éxito en tu Desarrollo!
-
-Recuerda que este es un proyecto base que puedes personalizar y expandir según tus necesidades. ¡Diviértete construyendo!
+El proyecto se ejecuta de manera local debido al uso de emuladores. 
+Los dispositivos Android pueden autenticarse con los emuladores siempre que esten conectados a la misma red.
 ```
 
