@@ -1,34 +1,27 @@
 
 # 📚 BookReview App - React Native + Expo
 
-Este es un proyecto base para la aplicación BookReview, una app móvil para gestionar y realizar reseñas de libros. Este esqueleto proporciona la estructura inicial y navegación básica para que puedas desarrollar la aplicación completa.
+Presentacion Proyecto Final
+Diplomante : Marcos Ormachea Araya
+Herramientas utilizadas
 
-## 🚀 Comenzando
+React Native + Expo
+λ node --version
+v20.18.1
+λ expo cli --version
+6.3.12
+λ firebase cli --version
+13.31.1
 
-### Prerrequisitos
+Proyecto Firebase
+λ firebase use
+Active Project: booksreviewpr
 
-- Node.js >= 16.x
-- Expo CLI
-- Un editor de código (recomendado: VS Code)
-- Expo Go app en tu dispositivo móvil (para testing)
+Emuladores Firebase utilizados
 
-### Instalación
 
-1. Clona este repositorio:
-```bash
-git clone [url-del-repositorio]
-cd book-review-app
-```
 
-2. Instala las dependencias:
-```bash
-npm install
-```
 
-3. Inicia el proyecto:
-```bash
-npx expo start
-```
 
 ## 📁 Estructura del Proyecto
 
