@@ -2,6 +2,7 @@
 # 📚 BookReview App - React Native + Expo
 
 Presentacion Proyecto Final
+
 Diplomante : Marcos Ormachea Araya
 Herramientas utilizadas
 
