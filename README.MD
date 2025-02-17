@@ -5,7 +5,6 @@ Presentacion Proyecto Final
 
 Diplomante : Marcos Ormachea Araya
 Herramientas utilizadas
-
 React Native + Expo
 λ node --version
 v20.18.1
